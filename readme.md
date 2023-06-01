@@ -2,7 +2,7 @@
    - recupero gli arrows
    - recupero la gallery
    - recupero il thumbnails
-1. preparo un'array vuota dove carico le immagini per il carosello
+1. preparo un'array con le immagini per il carosello
 2. inserisco le immagini nel DOM
 3. recupero le immagini
    - preparo la gestione dell'indice
