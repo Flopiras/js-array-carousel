@@ -3,8 +3,10 @@
    - recupero la gallery
    - recupero il thumbnails
 1. preparo un'array con le immagini per il carosello
-2. inserisco le immagini nel DOM
-3. recupero le immagini
+   - preparo un collegamento per l'html
+   - creo un tag immagine per ogni elemento dell'array
+   - inserisco le immagini nel DOM
+2. recupero le immagini
    - preparo la gestione dell'indice
    - imposto la prima immagine come attiva
-4. metto in ascolto il next
+3. metto in ascolto il next
