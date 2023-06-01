@@ -1,0 +1,23 @@
+.carousel{
+    height: 800px;
+}
+
+.gallery{
+    height: 500px;
+}
+
+.gallery img,
+.thumbnails img{
+
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.gallery img{
+    max-width: 1200px;
+}
+
+.thumbnails{
+    height: 100px;
+}
