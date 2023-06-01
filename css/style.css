@@ -1,7 +1,9 @@
+/* CAROUSEL */
 .carousel{
     height: 800px;
 }
 
+/* BIG CAROUSEL */
 .gallery{
     height: 500px;
 }
@@ -10,14 +12,35 @@
 .thumbnails img{
 
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
     border-radius: 10px;
 }
 
 .gallery img{
-    max-width: 1200px;
+    max-width: 500px;
 }
 
+.big-carousel{
+    position: relative;
+}
+
+/* arrows carousel */
+#prev,
+#next{
+    position: absolute;
+    top: 250px;
+}
+
+#prev{
+    left: 360px
+}
+
+#next{
+    right: 360px;
+}
+
+
+/* LITTLE CAROUSEL */
 .thumbnails{
     height: 100px;
 }
