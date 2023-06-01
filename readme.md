@@ -10,3 +10,10 @@
    - preparo la gestione dell'indice
    - imposto la prima immagine come attiva
 3. metto in ascolto il next
+   - rimuovo la classe block all'immagine con indice corrente
+   - incremento l'indice corrente
+   - aggiungo la classe block alla nuova immagine corrente
+4. metto in ascolto il prev
+   - rimuovo la classe block all'immagine con indice corrente
+   - decremento l'indice corrente
+   - aggiungo la classe block alla nuova immagine corrente
