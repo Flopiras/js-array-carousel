@@ -17,3 +17,13 @@
    - rimuovo la classe block all'immagine con indice corrente
    - decremento l'indice corrente
    - aggiungo la classe block alla nuova immagine corrente
+
+**BONUS**
+
+3. metto in ascolto il next
+   - **SE** (quando clicco il bottone sono all'ultima immagine, la prossima dovrà essere la prima della lista)
+   - **ALTRIMENTI** incremento l'indice corrente
+4. metto in ascolto il prev
+
+- **SE** (quando clicco il bottone sono alla prima immagine, la prossima dovrà essere l'ultima della lista)
+  - **ALTRIMENTI** decremento l'indice corrente

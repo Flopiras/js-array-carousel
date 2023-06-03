@@ -29,15 +29,21 @@ let currentIndex = 0;
 //imposto la prima immagine come attiva (block)
 images[currentIndex].classList.add('d-block');
 
+
 //metto in ascolto il next
 nextButton.addEventListener('click', function (){
-
     //rimuovo la classe block all'immagine con indice corrente
     images[currentIndex].classList.remove('d-block');
-   
-    //incremento l'indice corrente
-    currentIndex++;
-
+    
+    //SE (quando clicco il bottone sono all'ultima immagine, la prossima dovrà essere la prima della lista)
+    if(currentIndex === images.length - 1){
+        currentIndex = 0;
+    }
+    //ALTRIMENTI incremento l'indice corrente
+    else{
+        currentIndex++;
+    }
+    
     //aggiungo la classe block alla nuova immagine corrente
     images[currentIndex].classList.add('d-block');
 })
@@ -47,8 +53,14 @@ prevButton.addEventListener('click', function (){
     //rimuovo la classe block all'immagine con indice corrente
     images[currentIndex].classList.remove('d-block');
    
-    //decremento l'indice corrente
-    currentIndex--;
+    //SE (quando clicco il bottone sono alla prima immagine, la prossima dovrà essere l'ultima' della lista)
+    if(currentIndex === 0){
+        currentIndex = images.length - 1;
+    }
+    //ALTRIMENTI decremento l'indice corrente
+    else{
+        currentIndex--;
+    }
 
     //aggiungo la classe block alla nuova immagine corrente
     images[currentIndex].classList.add('d-block');
