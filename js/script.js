@@ -6,19 +6,27 @@ const nextButton = document.getElementById('next');
 
 const gallery = document.querySelector('.gallery');
 
+const thumbnails = document.querySelector('.thumbnails');
+
 //Preparo un array con le immagini
 const sources = ['img/01.webp' , 'img/02.webp' , 'img/03.webp' , 'img/04.webp' , 'img/05.webp']
 
 //preparo un collegamento per l'HTML
 let imageElements = '';
 
+let thumbnailsItems = ``;
+
 //creo un tag img per ogni elemento di sources
 for(let i = 0; i < sources.length; i++){
     imageElements += `<img src="${sources[i]}" alt="game${i + 1}" class="">`;
+
+    thumbnailsItems += `<img src="${sources[i]}" alt="game${i + 1}" class="mx-1">`
 }
 
 //inserisco le immagini nel DOM
 gallery.innerHTML = imageElements;
+
+thumbnails.innerHTML = thumbnailsItems;
 
 //recupero tutte le immagini
 const images = document.querySelectorAll('.gallery img');
