@@ -27,3 +27,9 @@
 
 - **SE** (quando clicco il bottone sono alla prima immagine, la prossima dovrà essere l'ultima della lista)
   - **ALTRIMENTI** decremento l'indice corrente
+
+**BONUS 2**
+
+5. recupero l'elemento dal DOM
+6. creo un collegamento con l'HTML
+7. inserisco le immagini nel thumbnails
