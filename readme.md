@@ -33,3 +33,7 @@
 5. recupero l'elemento dal DOM
 6. creo un collegamento con l'HTML
 7. inserisco le immagini nel thumbnails
+   - quando è attiva l'immagine del carousel, la stessa immagine nel thumbnails deve avere il bordo
+     - seleziono le immagini del thumbnails
+     - metto in ascolto il next - rimuovo la classe border all'immagine con indice corrente - incremento l'indice corrente - aggiungo la classe block alla nuova immagine corrente
+       -metto in ascolto il prev - rimuovo la classe block all'immagine con indice corrente - decremento l'indice corrente - aggiungo la classe block alla nuova immagine corrente

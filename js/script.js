@@ -30,6 +30,7 @@ thumbnails.innerHTML = thumbnailsItems;
 
 //recupero tutte le immagini
 const images = document.querySelectorAll('.gallery img');
+const imagesThumbnails = document.querySelectorAll('.thumbnails img');
 
 //preparo la gestione dell'indice
 let currentIndex = 0;
@@ -37,11 +38,17 @@ let currentIndex = 0;
 //imposto la prima immagine come attiva (block)
 images[currentIndex].classList.add('d-block');
 
+//imposto la prima immagine come attiva (border)
+imagesThumbnails[currentIndex].classList.add('bordered');
+
 
 //metto in ascolto il next
 nextButton.addEventListener('click', function (){
     //rimuovo la classe block all'immagine con indice corrente
     images[currentIndex].classList.remove('d-block');
+
+    //rimuovo la classe border all'immagine con indice corrente
+    imagesThumbnails[currentIndex].classList.remove('bordered');
     
     //SE (quando clicco il bottone sono all'ultima immagine, la prossima dovrà essere la prima della lista)
     if(currentIndex === images.length - 1){
@@ -54,12 +61,18 @@ nextButton.addEventListener('click', function (){
     
     //aggiungo la classe block alla nuova immagine corrente
     images[currentIndex].classList.add('d-block');
+
+    //aggiungo la classe border alla nuova immagine corrente
+    imagesThumbnails[currentIndex].classList.add('bordered');
 })
 
 prevButton.addEventListener('click', function (){
 
     //rimuovo la classe block all'immagine con indice corrente
     images[currentIndex].classList.remove('d-block');
+
+    //rimuovo la classe border all'immagine con indice corrente
+    imagesThumbnails[currentIndex].classList.remove('bordered');
    
     //SE (quando clicco il bottone sono alla prima immagine, la prossima dovrà essere l'ultima' della lista)
     if(currentIndex === 0){
@@ -72,4 +85,7 @@ prevButton.addEventListener('click', function (){
 
     //aggiungo la classe block alla nuova immagine corrente
     images[currentIndex].classList.add('d-block');
+
+    //aggiungo la classe border alla nuova immagine corrente
+    imagesThumbnails[currentIndex].classList.add('bordered');
 })
